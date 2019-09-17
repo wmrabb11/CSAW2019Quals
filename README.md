@@ -57,7 +57,7 @@ The ones we'll need are `pop_rax; ret` and `syscall`.
 5. We then call the syscall
 6. Next, we setup our SigReturn frame. This will set the registers accordingly for what to do when the SigReturn is triggered.
 7. Set rax = 59 for `execve`
-8. Set rdi = *address of binsh* (since it's the first parameter into the call)
+8. Set rdi = address of binsh (since it's the first parameter into the call)
 9. Set rip = syscall to execute the syscall
 10. Stringify our frame and tack it onto the end of the payload.
 11. Send our payload and use pwntools interactive to get a shell and cat out the flag :-)
