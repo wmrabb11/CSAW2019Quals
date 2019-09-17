@@ -1,0 +1,37 @@
+
+small_boi:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+000000000040017c <.text>:
+  40017c:	55                   	push   %rbp
+  40017d:	48 89 e5             	mov    %rsp,%rbp
+  400180:	b8 0f 00 00 00       	mov    $0xf,%eax
+  400185:	0f 05                	syscall 
+  400187:	90                   	nop
+  400188:	5d                   	pop    %rbp
+  400189:	c3                   	retq   
+  40018a:	58                   	pop    %rax
+  40018b:	c3                   	retq   
+  40018c:	55                   	push   %rbp
+  40018d:	48 89 e5             	mov    %rsp,%rbp
+  400190:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  400194:	48 89 c6             	mov    %rax,%rsi
+  400197:	48 31 c0             	xor    %rax,%rax
+  40019a:	48 31 ff             	xor    %rdi,%rdi
+  40019d:	48 c7 c2 00 02 00 00 	mov    $0x200,%rdx
+  4001a4:	0f 05                	syscall 
+  4001a6:	b8 00 00 00 00       	mov    $0x0,%eax
+  4001ab:	5d                   	pop    %rbp
+  4001ac:	c3                   	retq   
+  4001ad:	55                   	push   %rbp
+  4001ae:	48 89 e5             	mov    %rsp,%rbp
+  4001b1:	b8 00 00 00 00       	mov    $0x0,%eax
+  4001b6:	e8 d1 ff ff ff       	callq  0x40018c
+  4001bb:	48 31 f8             	xor    %rdi,%rax
+  4001be:	48 c7 c0 3c 00 00 00 	mov    $0x3c,%rax
+  4001c5:	0f 05                	syscall 
+  4001c7:	90                   	nop
+  4001c8:	5d                   	pop    %rbp
+  4001c9:	c3                   	retq   

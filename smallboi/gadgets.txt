@@ -1,0 +1,41 @@
+Gadgets information
+============================================================
+0x00000000004001a7 : add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400235 : add byte ptr [rax], al ; add byte ptr [rdi + rdi*8 - 1], dl ; jmp qword ptr [rcx]
+0x0000000000400182 : add byte ptr [rax], al ; add byte ptr [rdi], cl ; add eax, 0x58c35d90 ; ret
+0x00000000004001a9 : add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400183 : add byte ptr [rax], al ; syscall
+0x0000000000400237 : add byte ptr [rdi + rdi*8 - 1], dl ; jmp qword ptr [rcx]
+0x0000000000400184 : add byte ptr [rdi], cl ; add eax, 0x58c35d90 ; ret
+0x00000000004001a0 : add byte ptr [rdx], al ; add byte ptr [rax], al ; syscall
+0x0000000000400186 : add eax, 0x58c35d90 ; ret
+0x00000000004001bd : clc ; mov rax, 0x3c ; syscall
+0x000000000040016b : clc ; push -0x4f ; xchg eax, edi ; shr byte ptr [rdx + rcx*2 + 0x68], 0x96 ; ret 0x5462
+0x00000000004001c1 : cmp al, 0 ; add byte ptr [rax], al ; syscall
+0x000000000040019c : dec dword ptr [rax - 0x39] ; ret 0x200
+0x000000000040023b : jmp qword ptr [rcx]
+0x000000000040016d : mov cl, 0x97 ; shr byte ptr [rdx + rcx*2 + 0x68], 0x96 ; ret 0x5462
+0x00000000004001a6 : mov eax, 0 ; pop rbp ; ret
+0x00000000004001bf : mov eax, 0x3c ; syscall
+0x0000000000400180 : mov eax, 0xf ; syscall
+0x000000000040017e : mov ebp, esp ; mov eax, 0xf ; syscall
+0x000000000040019e : mov edx, 0x200 ; syscall
+0x00000000004001be : mov rax, 0x3c ; syscall
+0x000000000040017d : mov rbp, rsp ; mov eax, 0xf ; syscall
+0x000000000040019d : mov rdx, 0x200 ; syscall
+0x0000000000400187 : nop ; pop rbp ; ret
+0x000000000040018a : pop rax ; ret
+0x0000000000400188 : pop rbp ; ret
+0x000000000040016c : push -0x4f ; xchg eax, edi ; shr byte ptr [rdx + rcx*2 + 0x68], 0x96 ; ret 0x5462
+0x000000000040017c : push rbp ; mov rbp, rsp ; mov eax, 0xf ; syscall
+0x0000000000400189 : ret
+0x000000000040019f : ret 0x200
+0x0000000000400174 : ret 0x5462
+0x000000000040016f : shr byte ptr [rdx + rcx*2 + 0x68], 0x96 ; ret 0x5462
+0x0000000000400185 : syscall
+0x000000000040016e : xchg eax, edi ; shr byte ptr [rdx + rcx*2 + 0x68], 0x96 ; ret 0x5462
+0x0000000000400173 : xchg eax, esi ; ret 0x5462
+0x00000000004001bc : xor eax, edi ; mov rax, 0x3c ; syscall
+0x000000000040019b : xor edi, edi ; mov rdx, 0x200 ; syscall
+
+Unique gadgets found: 37
